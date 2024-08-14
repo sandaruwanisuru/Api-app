@@ -1,0 +1,16 @@
+// handling request
+
+const express = require('express'); // import express library
+const app = express(); // all kind of utilites set up express app
+ 
+const productRotes = require('./api/routes/products');
+
+app.use('/products', productRotes);
+
+// app.use((req, res, next) => {
+//   res.status(200).json({
+//     message: 'It works',
+//   }); //200 everything ok
+// }); // parameters ara actually function
+
+module.exports = app;
