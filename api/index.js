@@ -10,7 +10,7 @@ app.use(cors());
 
 //connect to mongodb
 mongoose.connect(
-  'mongodb+srv://sandaruwanisuru973:Isuru123@cluster0.tsfxn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+  'mongodb+srv://sandaruwanisuru973:Isuru123@cluster0.tsfxn.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0'
 );
 mongoose.Promise = global.Promise;
 
