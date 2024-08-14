@@ -10,7 +10,7 @@ const App = () => {
     const fetchData = async (longitude, latitude) => {
       try {
         const res = await fetch(
-          `http://localhost:3000/api/ninjas?lng=-${longitude}&lat=${latitude}`
+          `https://api-app-m8y5.onrender.com/api/ninjas?lng=${longitude}&lat=${latitude}`
         );
 
         if (!res.ok) {
