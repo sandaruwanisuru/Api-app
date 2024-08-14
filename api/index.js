@@ -3,14 +3,15 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 // const routes = require('./routers/api');
 const cors = require('cors');
-require('dotenv').config();
 
 const app = express(); //set up express
 
 app.use(cors());
 
 //connect to mongodb
-mongoose.connect('mongodb://localhost:27017/ninjago');
+mongoose.connect(
+  'mongodb+srv://sandaruwanisuru973:Isuru123@cluster0.tsfxn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+);
 mongoose.Promise = global.Promise;
 
 const db = mongoose.connection;
